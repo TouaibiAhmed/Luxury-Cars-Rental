@@ -1,0 +1,226 @@
+
+
+
+header {
+  background: rgba(0, 0, 0, 0.405); /* Semi-transparent black background */
+  color: #a3a3a3;
+  padding: 1rem 0;
+  position: absolute; /* Position it over the hero section */
+  top: 0;
+  height: 70px;
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 10; /* Keep it above other content */
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  margin-top: -60px;
+}
+
+.logo_container {
+  flex: 1;
+  margin-top: 27px;
+
+}
+
+
+.logo {
+  height: 140px;
+  width: auto;
+}
+
+
+.nav_links, .auth_links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_links {
+  flex: 2;
+  justify-content: center;
+  font-family:Courier, monospace;
+}
+
+.auth_links {
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.nav_links li, .auth_links li {
+  margin: 0 15px;
+}
+
+
+.nav_links li a {
+  font-family: "Raleway", serif;
+  font-weight: 500; /* Adjust weight based on your desired style */
+  color: #ffbf00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+.nav_links li a, .auth_links li a {
+  color: #ffbf00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.nav_links li a:hover, .auth_links li a:hover {
+  text-decoration: underline;
+  color: #ffbf00; /* Highlight color on hover */
+
+}
+
+.auth_links li a {
+  font-family: "Raleway", serif;
+  font-weight: 600; /* Slightly heavier for emphasis */
+  color: #ffbf00;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border-color: #ffbf00;
+  border-style: solid;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth_links li a:hover {
+  background-color: #b0a39484; /* Darker shade on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+  color: white;
+}
+
+
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('./assets/contactbg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.contact-section, .form-section {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+
+.form-section {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+
+
+
+.contact-section h1, .form-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-bottom: 2px solid white;
+  display: inline-block;
+}
+
+.contact-section p {
+  line-height: 1.8;
+  margin: 10px 0;
+}
+
+.form-section p {
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-input {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.phone-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+  max-width: 500px;
+}
+
+.country-code {
+  background: white;
+  color: black;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.phone-input {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  flex-grow: 1;
+}
+
+.form-button {
+  background: white;
+  color: black;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 500px;
+}
+
+.form-button:hover {
+  background: gray;
+  color: white;
+}
+  /* Footer */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

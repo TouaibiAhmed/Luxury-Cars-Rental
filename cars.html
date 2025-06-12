@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entreprise de Location de Voitures</title>
+    <link rel="stylesheet" href="cars.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo_container">
+                <a href="home.html"> <img class="logo" src="./assets/nobg.png" alt="logo"> </a>
+            </div>
+            <ul class="nav_links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cars.html">Our Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="auth_links">
+                <li><a href="./signIn.html">Inscription</a></li>
+            
+            </ul>
+        </nav>
+    </header>
+    <!-- Cars Page Header Section -->
+<section class="cars-header">
+  <div class="header-content">
+    <h1>Need to Rent a Luxury Car? Send A Request</h1>
+    <p>Complete the form below, choose the car, pick up date, location and drop off date and we'll contact you as soon as possible</p>
+    <form class="header-form">
+      <select name="car" class="form-input">
+        <option value="" disabled selected>Choose car</option>
+        <!-- Luxury Cars -->
+        <option value="BMW M760">BMW M760</option>
+        <option value="Bentley Continental">Bentley Continental</option>
+        <option value="Rolls Royce Phantom">Rolls Royce Phantom</option>
+        <option value="Mercedes S-Class">Mercedes S-Class</option>
+        <option value="Audi A8">Audi A8</option>
+        <option value="Lexus LS">Lexus LS</option>
+        <option value="Cadillac CT6">Cadillac CT6</option>
+        <option value="Jaguar XJ">Jaguar XJ</option>
+        <!-- Sports Cars -->
+        <option value="Dodge Challenger SRT">Dodge Challenger SRT</option>
+        <option value="Ferrari 488 GTB">Ferrari 488 GTB</option>
+        <option value="Lamborghini Aventador">Lamborghini Aventador</option>
+        <option value="McLaren 720S">McLaren 720S</option>
+        <option value="Porsche 911 Turbo S">Porsche 911 Turbo S</option>
+        <option value="Chevrolet Corvette C8">Chevrolet Corvette C8</option>
+        <option value="Nissan GT-R">Nissan GT-R</option>
+        <option value="BMW M4">BMW M4</option>
+        <!-- SUVs -->
+        <option value="Range Rover Sport">Range Rover Sport</option>
+        <option value="Mercedes G-Class">Mercedes G-Class</option>
+        <option value="Audi Q7">Audi Q7</option>
+        <option value="BMW X7">BMW X7</option>
+        <option value="Tesla Model X">Tesla Model X</option>
+        <option value="Porsche Cayenne">Porsche Cayenne</option>
+        <option value="Jeep Grand Cherokee">Jeep Grand Cherokee</option>
+        <option value="Volvo XC90">Volvo XC90</option>
+      </select>
+      <input type="date" placeholder="Select date" class="form-input" />
+      <input type="text" placeholder="Choose location" class="form-input" />
+      <input type="date" placeholder="Drop off date" class="form-input" />
+    </form>
+    
+    <button type="submit" class="btn-send">+ SEND</button>
+
+  </div>
+</section>
+
+<section class="gallery">
+  <h2 class="headings left">Luxury Cars</h2>
+  <div class="cards">
+      <!-- Luxury Car Cards -->
+      <div class="card">
+          <img src="./assets/bm.jpg" alt="BMW M760" class="card-image">
+          <div class="card-content">
+              <h3>BMW M760</h3>
+              <p>Luxury Sedan with V12 Engine</p>
+              <div class="card-details">
+                  <span>$59.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/bently.jpg" alt="Bentley Continental" class="card-image">
+          <div class="card-content">
+              <h3>Bentley Continental</h3>
+              <p>Luxury Coupe with High Performance</p>
+              <div class="card-details">
+                  <span>$49.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/rr.jpeg" alt="Rolls Royce Phantom" class="card-image">
+          <div class="card-content">
+              <h3>Rolls Royce Phantom</h3>
+              <p>Iconic Luxury Sedan</p>
+              <div class="card-details">
+                  <span>$99.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/mrc.jpg" alt="Mercedes S-Class" class="card-image">
+          <div class="card-content">
+              <h3>Mercedes S-Class</h3>
+              <p>State-of-the-Art Luxury Sedan</p>
+              <div class="card-details">
+                  <span>$89.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Audi.jpg" alt="Audi A8" class="card-image">
+          <div class="card-content">
+              <h3>Audi A8</h3>
+              <p>Full-Size Luxury Sedan</p>
+              <div class="card-details">
+                  <span>$69.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Lexuss.avif" alt="Lexus LS" class="card-image">
+          <div class="card-content">
+              <h3>Lexus LS</h3>
+              <p>Refined Japanese Luxury Sedan</p>
+              <div class="card-details">
+                  <span>$59.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Cadillac.jpg" alt="Cadillac CT6" class="card-image">
+          <div class="card-content">
+              <h3>Cadillac CT6</h3>
+              <p>Premium American Sedan</p>
+              <div class="card-details">
+                  <span>$69.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Jaguar.avif" alt="Jaguar XJ" class="card-image">
+          <div class="card-content">
+              <h3>Jaguar XJ</h3>
+              <p>Elegant British Luxury Sedan</p>
+              <div class="card-details">
+                  <span>$64.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2 class="headings left">Sports Cars</h2>
+  <div class="cards">
+      <!-- Sports Car Cards -->
+      <div class="card">
+          <img src="./assets/dodge.jpg" alt="Dodge Challenger SRT" class="card-image">
+          <div class="card-content">
+              <h3>Dodge Challenger SRT</h3>
+              <p>High-Performance Muscle Car</p>
+              <div class="card-details">
+                  <span>$25.99/hour</span>
+                  <span class="availability booked">Booked for 09:45</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/fer.jpg" alt="Ferrari 488 GTB" class="card-image">
+          <div class="card-content">
+              <h3>Ferrari 488 GTB</h3>
+              <p>Premium Italian Sports Car</p>
+              <div class="card-details">
+                  <span>$89.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/lambo.jpg" alt="Lamborghini Aventador" class="card-image">
+          <div class="card-content">
+              <h3>Lamborghini Aventador</h3>
+              <p>Ultimate Italian Supercar</p>
+              <div class="card-details">
+                  <span>$109.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/McLaren.jpg" alt="McLaren 720S" class="card-image">
+          <div class="card-content">
+              <h3>McLaren 720S</h3>
+              <p>British High-Performance Sports Car</p>
+              <div class="card-details">
+                  <span>$99.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/porshe.jpg" alt="Porsche 911 Turbo S" class="card-image">
+          <div class="card-content">
+              <h3>Porsche 911 Turbo S</h3>
+              <p>Legendary German Sports Car</p>
+              <div class="card-details">
+                  <span>$79.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Chevrolet.png" alt="Chevrolet Corvette" class="card-image">
+          <div class="card-content">
+              <h3>Chevrolet Corvette C8</h3>
+              <p>Mid-Engine American Sports Car</p>
+              <div class="card-details">
+                  <span>$49.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Nissan.jpg" alt="Nissan GT-R" class="card-image">
+          <div class="card-content">
+              <h3>Nissan GT-R</h3>
+              <p>Japanese High-Performance Icon</p>
+              <div class="card-details">
+                  <span>$69.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/m4.jpg" alt="BMW M4" class="card-image">
+          <div class="card-content">
+              <h3>BMW M4</h3>
+              <p>German Sports Coupe</p>
+              <div class="card-details">
+                  <span>$64.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Repeat for SUVs Section -->
+<section class="gallery">
+  <h2 class="headings left">SUVs</h2>
+  <div class="cards">
+      <!-- SUV Car Cards -->
+      <div class="card">
+          <img src="./assets/Range.jpg" alt="Range Rover Sport" class="card-image">
+          <div class="card-content">
+              <h3>Range Rover Sport</h3>
+              <p>Luxury British SUV</p>
+              <div class="card-details">
+                  <span>$89.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/mars.jpg" alt="Mercedes G-Class" class="card-image">
+          <div class="card-content">
+              <h3>Mercedes G-Class</h3>
+              <p>Iconic Off-Road SUV</p>
+              <div class="card-details">
+                  <span>$129.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Q7.jpg" alt="Audi Q7" class="card-image">
+          <div class="card-content">
+              <h3>Audi Q7</h3>
+              <p>Premium Full-Size SUV</p>
+              <div class="card-details">
+                  <span>$69.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/X7.jpg" alt="BMW X7" class="card-image">
+          <div class="card-content">
+              <h3>BMW X7</h3>
+              <p>Luxury 7-Seater SUV</p>
+              <div class="card-details">
+                  <span>$99.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/teslaX.jpg" alt="Tesla Model X" class="card-image">
+          <div class="card-content">
+              <h3>Tesla Model X</h3>
+              <p>Electric Luxury SUV</p>
+              <div class="card-details">
+                  <span>$89.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Porsche.jpg" alt="Porsche Cayenne" class="card-image">
+          <div class="card-content">
+              <h3>Porsche Cayenne</h3>
+              <p>High-Performance SUV</p>
+              <div class="card-details">
+                  <span>$109.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/Jeep.jpg" alt="Jeep Grand Cherokee" class="card-image">
+          <div class="card-content">
+              <h3>Jeep Grand Cherokee</h3>
+              <p>American Off-Road SUV</p>
+              <div class="card-details">
+                  <span>$59.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+      <div class="card">
+          <img src="./assets/VolvoXC90.jpg" alt="Volvo XC90" class="card-image">
+          <div class="card-content">
+              <h3>Volvo XC90</h3>
+              <p>Safe and Elegant SUV</p>
+              <div class="card-details">
+                  <span>$69.99/hour</span>
+                  <span class="availability available">Available Now</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+
+<footer>
+    <p>&copy; 2024 Lucury Cars Rental. All Rights Reserved.</p>
+</footer>
+      

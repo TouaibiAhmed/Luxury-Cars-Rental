@@ -1,0 +1,246 @@
+/* SignIn  */
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+  }
+  
+  header {
+    padding: 1rem 0;
+    position: absolute; /* Position it over the hero section */
+    top: 0;
+    height: 70px;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 10; /* Keep it above other content */
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: -80px;
+  }
+  
+  .logo_container {
+    flex: 1;
+    margin-top: 60px;
+  }
+  
+  .logo {
+    height: 140px;
+    width: auto;
+  }
+  
+  /* Wrapper for Sign-In Page */
+  .signin-wrapper {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+  }
+  
+  /* Left Side - Image Container */
+  .img-containerr {
+    flex: 2; /* Takes 50% of the width */
+    background: url('./assets/log3.jpg') no-repeat center center / cover; /* Set the background image */
+  }
+  
+  /* Right Side - Form Container */
+  .login-container {
+    flex: 1; /* Takes 50% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCFAF1;
+    background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(216, 220, 225) 100%);
+  }
+  
+  /* Styling for the Login Form */
+  .login-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .login-form p {
+    font-size: 1rem;
+    color: #8d8d8d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-groupp {
+    margin-bottom: 1rem;
+  }
+  
+  .input-groupp input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-groupp input:focus {
+    border-color: #ffbf00;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .checkbox-group .forgot_pswrd {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  
+  .checkbox-group .forgot_pswrd:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #ffbf00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #ffbf00;
+    transform: scale(1.05);
+  }
+  .social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .social-button {
+    width: 40px; /* Reduced size */
+    height: 40px; /* Reduced size */
+    background-color: #ddd;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button img {
+    width: 40px; /* Smaller image size */
+    height: 40px; /* Smaller image size */
+  }
+  
+  .social-button:hover {
+    background-color: #bbb;
+  }
+  
+  
+  .login-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .login-footer a {
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+/* Wrapper for Sign-Up Page */
+.signup-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.signup-container {
+    flex: 1; /* Takes 50% of the width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCFAF1;
+    background: linear-gradient(90deg, rgb(239, 239, 239) 0%, rgb(216, 220, 225) 100%);
+}
+
+/* Styling for the Sign-Up Form */
+.signup-form {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.signup-form h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.signup-form p {
+    font-size: 1rem;
+    color: #8d8d8d;
+    margin-bottom: 1.5rem;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    background-color: #ffbf00;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.signup-button:hover {
+    background-color: #ffbf00;
+    transform: scale(1.05);
+}
+
+.signup-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.signup-footer a {
+    text-decoration: none;
+    color: #ffbf00;
+}
+
+.signup-footer a:hover {
+    text-decoration: underline;
+}

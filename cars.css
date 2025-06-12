@@ -1,0 +1,319 @@
+
+body{
+  background-color: #fffcfc;
+}
+
+
+header {
+    background: rgba(0, 0, 0, 0.405); /* Semi-transparent black background */
+    color: #a3a3a3;
+    padding: 1rem 0;
+    position: absolute; /* Position it over the hero section */
+    top: 0;
+    height: 70px;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 10; /* Keep it above other content */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: -60px;
+}
+
+.logo_container {
+    flex: 1;
+    margin-top: 27px;
+
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+}
+
+.nav_links, .auth_links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links {
+    flex: 2;
+    justify-content: center;
+    font-family:Courier, monospace;
+}
+
+.auth_links {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav_links li, .auth_links li {
+    margin: 0 15px;
+}
+
+
+.nav_links li a {
+    font-family: "Raleway", serif;
+    font-weight: 500; /* Adjust weight based on your desired style */
+    color: #ffbf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.nav_links li a, .auth_links li a {
+    color: #ffbf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav_links li a:hover, .auth_links li a:hover {
+    text-decoration: underline;
+    color: #ffbf00; /* Highlight color on hover */
+
+}
+
+.auth_links li a {
+    font-family: "Raleway", serif;
+    font-weight: 600; /* Slightly heavier for emphasis */
+    color: #ffbf00;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-color: #ffbf00;
+    border-style: solid;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth_links li a:hover {
+    background-color: #b0a39484; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: white;
+}
+
+
+/* Cars Page Header */
+/* Cars Page Header Section */
+.cars-header {
+    background-image: url('./assets/car14.jpg'); /* Replace with your car image */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-left: -8px;
+    margin-top: -8px;
+    height: 300px;
+  }
+  
+  .cars-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    z-index: 1;
+  }
+  
+  .header-content {
+    position: relative;
+    z-index: 2;
+    margin-top: 65px;
+  }
+  
+  .header-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .header-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .header-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 50px;
+  }
+  
+  .form-input {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    width: 18rem;
+  }
+  
+  .form-input::placeholder {
+    color: #555;
+  }
+  
+  select.form-input {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .btn-send {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 1px solid #fff;
+    color: #fff;
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 25px;
+    margin-right: 80px;
+  }
+  
+  .btn-send:hover {
+    background: #fff;
+    color: #000;
+  }
+  
+  
+
+
+
+/* Gallery Section */
+.gallery {
+  text-align: center;
+  padding: 2rem;
+}
+
+.gallery h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 320px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.card:hover {
+  transform: scale(1.1); /* Increases the size by 10% */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow */
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-content p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.availability {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.available {
+  background-color: #28a745;
+}
+
+.booked {
+  background-color: #dc3545;
+}
+
+.card-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.9rem;
+  color: #555;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-icons span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.headings.left {
+  text-align: left;
+  margin-left: 2rem;
+}
+
+
+
+
+
+  /* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

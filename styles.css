@@ -1,0 +1,419 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.405); /* Semi-transparent black background */
+    color: #a3a3a3;
+    padding: 1rem 0;
+    position: absolute; /* Position it over the hero section */
+    top: 0;
+    height: 70px;
+    left: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 10; /* Keep it above other content */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: -60px;
+}
+
+.logo_container {
+    flex: 1;
+    margin-top: 27px;
+
+}
+
+.logo {
+    height: 140px;
+    width: auto;
+}
+
+.nav_links, .auth_links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_links {
+    flex: 2;
+    justify-content: center;
+    font-family:Courier, monospace;
+}
+
+.auth_links {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.nav_links li, .auth_links li {
+    margin: 0 15px;
+}
+
+
+.nav_links li a {
+    font-family: "Raleway", serif;
+    font-weight: 500; /* Adjust weight based on your desired style */
+    color: #ffbf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+.nav_links li a, .auth_links li a {
+    color: #ffbf00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.nav_links li a:hover, .auth_links li a:hover {
+    text-decoration: underline;
+    color: #ffbf00; /* Highlight color on hover */
+
+}
+
+.auth_links li a {
+    font-family: "Raleway", serif;
+    font-weight: 600; /* Slightly heavier for emphasis */
+    color: #ffbf00;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border-color: #ffbf00;
+    border-style: solid;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.auth_links li a:hover {
+    background-color: #b0a39484; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    color: white;
+}
+
+
+
+/* Hero Section */
+/* Hero Section with Background Slideshow */
+.hero {
+    position: relative;
+    height: 450px;
+    text-align: center;
+    color: #fff;
+    height: 450px;
+    overflow: hidden;
+    padding: 5rem 0;
+    
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('assets/login3.jpg') no-repeat center center/cover;
+    animation: slideShow 15s infinite; /* Keeps the same total animation duration */
+    z-index: -1; /* Place behind the text */
+}
+
+
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background: #fff;
+
+}
+.headings {
+    color: #333;
+    font-size: 2rem; /* Adjust size as needed */
+    margin-bottom: 0.2rem; /* Adds space below the 'Why Us?' heading */
+    background: #f3efef8f;
+    text-align: center;
+    
+
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+}
+
+.feature h2 {
+    color: #333;
+    margin-bottom: 0.5rem;
+
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Icon styling */
+.feature-icon {
+    width: 70px;  /* Adjust size as needed */
+    height: 70px; /* Adjust size as needed */
+    border-radius: 30%; /* Makes the image rounded */
+    margin: 1rem 0; /* Adds space between icon and text */
+    object-fit: cover; /* Ensures the image covers the rounded area */
+}
+
+
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 2rem;
+}
+
+.gallery h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 320px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+
+.card:hover {
+    transform: scale(1.1); /* Increases the size by 10% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds a more pronounced shadow */
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+.card-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-content p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+.card-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.availability {
+    padding: 0.2rem 0.5rem;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.available {
+    background-color: #28a745;
+}
+
+.booked {
+    background-color: #dc3545;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.9rem;
+    color: #555;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.card-icons span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
+
+/* Button Styling */
+.see-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.btn-see-more {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #3a3a3a;
+    background-color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #3a3a3a70;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.btn-see-more:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+}
+
+.btn-see-more:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(2px);
+}
+
+
+
+
+/* Video Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem;
+    background-color: #111111; /* Match background color */
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  .hero-content {
+    max-width: 50%;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #aaa;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-book {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #787474;
+    background-color: transparent;
+    text-decoration: none;
+    border: 2px solid #787474;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-book:hover {
+    background-color: #ffffff;
+    color: #111111;
+  }
+  
+  .hero-images {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .hero-images .image-main {
+    width: 40%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .hero-images .image-secondary {
+    width: 35%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+}
